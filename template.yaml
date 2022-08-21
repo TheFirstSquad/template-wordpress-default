@@ -33,6 +33,9 @@ inputs:
     name: wordpress_docker_image
     default: 6.0.1
 
+global-computed-inputs:
+  src_base_path: "src"
+
 hooks:
   - type: run
     trigger: after-render
