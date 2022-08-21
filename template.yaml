@@ -1,0 +1,9 @@
+name: template-wordpress-default
+description: Default template for Stack Wordpress
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
