@@ -2,8 +2,40 @@ name: template-wordpress-default
 description: Default template for Stack Wordpress
 types:
   - app-template
+
 inputs:
   - label: Project name
     type: text
     name: project_name
-    default: project-name
+    default: project-name    
+  - label: Wordpress Server Port
+    type: int
+    name: wordpress_server_port
+    default: 81
+  - label: Wordpress Database Name
+    type: text
+    name: wordpress_database_name
+    default: wp_stackspot
+  - label: Wordpress Database Port
+    type: int
+    name: wordpress_database_port
+    default: 3306
+  - label: Wordpress Database UserName
+    type: text
+    name: wordpress_database_username
+    default: wp_stackspot
+  - label: Wordpress Database Password
+    type: text
+    name: wordpress_database_password
+    default: wp_stackspot
+  - label: Wordpress Docker Image
+    type: text
+    name: wordpress_docker_image
+    default: 6.0.1
+
+hooks:
+  - type: run
+    trigger: after-render
+    commands:
+      - "echo 'Running the Docker Compose :: Build...'"
+      - "docker-compose build"

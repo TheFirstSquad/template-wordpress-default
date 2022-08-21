@@ -1,0 +1,35 @@
+version: '3.8'
+
+services: 
+    wordpress:
+        build: .docker/wordpress/.
+        restart: always
+        ports: 
+            - {{ inputs.wordpress_server_port }}:80
+        environment: 
+            WORDPRESS_DB_HOST: wordpress_db
+            WORDPRESS_DB_NAME: {{ inputs.wordpress_database_name }}
+            WORDPRESS_DB_USER: {{ inputs.wordpress_database_username }}
+            WORDPRESS_DB_PASSWORD: {{ inputs.wordpress_database_password }}
+        volumes: 
+            - ./src/plugins:/var/www/html/wp-content/plugins
+            - ./src/themes:/var/www/html/wp-content/themes
+
+    wordpress_db:
+        image: mysql:5.7
+        restart: always
+        ports:
+            - {{ inputs.wordpress_database_port }}:3306
+        environment: 
+            MYSQL_DATABASE: {{ inputs.wordpress_database_name }}
+            MYSQL_USER: {{ inputs.wordpress_database_username }}
+            MYSQL_PASSWORD: {{ inputs.wordpress_database_password }}
+            MYSQL_RANDOM_ROOT_PASSWORD: '1'
+        volumes: 
+            - wordpress_db:/var/lib/mysql
+
+networks: 
+    back:
+        
+volumes: 
+    wordpress_db:
