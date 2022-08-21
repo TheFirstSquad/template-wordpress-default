@@ -1,4 +1,4 @@
-name: template-wordpress-default
+name: default
 description: Default template for Stack Wordpress
 types:
   - app-template
