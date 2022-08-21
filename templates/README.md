@@ -1,2 +1,1 @@
-
 ## {{ inputs.project_name }}
