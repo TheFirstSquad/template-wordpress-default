@@ -1,6 +1,6 @@
 # template-wordpress-default
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Stackspot :: Default template for [Stack Wordpress](https://github.com/TheFirstSquad/stack-wordpress)
 
@@ -74,6 +74,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.lucasapoena.eti.br/"><img src="https://avatars.githubusercontent.com/u/135553?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lucas Apoena</b></sub></a><br /><a href="https://github.com/TheFirstSquad/template-wordpress-default/commits?author=lucasapoena" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/andreevilela"><img src="https://avatars.githubusercontent.com/u/54727503?v=4?s=100" width="100px;" alt=""/><br /><sub><b>andreevilela</b></sub></a><br /><a href="https://github.com/TheFirstSquad/template-wordpress-default/commits?author=andreevilela" title="Code">💻</a></td>
   </tr>
 </table>
 
