@@ -56,7 +56,7 @@ Wordpress Mapped Folders
 After creating your project, to build and run the docker containers solution, run the command below in the root of where you find the **docker-compose.yml** file
 
 ```bash
-docker-compose -f 'docker-compose.yml' up --build
+docker-compose -f docker-compose.yml up --build
 ```
 
 Then open http://localhost:81 in your browser.
